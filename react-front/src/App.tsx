@@ -1,18 +1,20 @@
-import { useState } from 'react'
+//import { useFetch } from './useFetch.ts'
 import './App.css'
-import { Button } from './components'
+import { Contenedor, NavBar } from './components'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  const countMore = () => {
-    setCount((count) => count +1)
-  }
-
+ // const { data } = useFetch("")
   return (
     <>
-      <Button label = {`Count is ${count}`} parentMethod={countMore}>
-      </Button>
+      <header>
+        <NavBar>
+        </NavBar>
+      </header>
+      <main>
+        <Contenedor>
+        </Contenedor>
+      </main>
     </>
   )
 }

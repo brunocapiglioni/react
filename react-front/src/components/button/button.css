@@ -1,0 +1,72 @@
+.button {
+  border: 0;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#b1 {
+  background-image: linear-gradient(
+      rgba(240, 108, 198, 0.1),
+      rgba(240, 108, 198, 0.9)
+    ),
+    url(./registrarse.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#b2 {
+  background-image: linear-gradient(
+      rgb(234, 146, 15, 0.2),
+      rgba(234, 146, 15, 0.9)
+    ),
+    url(carreras.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#b3 {
+  background-image: linear-gradient(
+      rgb(202, 49, 25, 0.2),
+      rgba(202, 49, 25, 0.9)
+    ),
+    url(materias.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b4 {
+  background-image: linear-gradient(rgb(5, 138, 16, 0.2), rgba(5, 138, 16, 0.9)),
+    url(grupos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b5 {
+  background-image: linear-gradient(
+      rgb(29, 145, 145, 0.2),
+      rgba(29, 145, 145, 0.9)
+    ),
+    url(org.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b6 {
+  background-image: linear-gradient(
+      rgb(29, 145, 145, 0.2),
+      rgba(29, 145, 145, 0.9)
+    ),
+    url(ayuda.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
