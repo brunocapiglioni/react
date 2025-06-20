@@ -1,10 +1,17 @@
-//import { useFetch } from './useFetch.ts'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Contenedor, NavBar } from './components'
 
 function App() {
+/*
+  const[mensaje, setMensaje] = useState('')
 
- // const { data } = useFetch("")
+  useEffect(() => {
+    fetch('http://localhost:3000')
+      .then(res => res.json())
+      .then(data => setMensaje(data.mensaje))
+  }, [])
+*/
   return (
     <>
       <header>
@@ -18,4 +25,5 @@ function App() {
     </>
   )
 }
+
 export default App

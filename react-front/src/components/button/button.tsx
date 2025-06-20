@@ -3,12 +3,12 @@ import "./button.css"
 interface Props {
   id: string,
   label: string,
-  parentMethod: () => void
+  onClick: () => void
 }
 
-export const Button = ({id, label, parentMethod}: Props) => {
+export const Button = ({id, label, onClick}: Props) => {
   return(
-  <button className= "button" id={id} onClick={parentMethod}>
+  <button className= "button" id={id} onClick={onClick}>
     {label}
   </button>
   )
