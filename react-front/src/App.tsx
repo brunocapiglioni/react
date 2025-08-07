@@ -1,28 +1,19 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-import { Contenedor, NavBar } from './components'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { NavBar } from './components/navBar/NavBar.tsx'
+import Inicio from './pages/Inicio/Inicio.tsx'
+import Carreras from './pages/Carreras.tsx'
 
 function App() {
-/*
-  const[mensaje, setMensaje] = useState('')
 
-  useEffect(() => {
-    fetch('http://localhost:3000')
-      .then(res => res.json())
-      .then(data => setMensaje(data.mensaje))
-  }, [])
-*/
   return (
-    <>
-      <header>
-        <NavBar>
-        </NavBar>
-      </header>
-      <main>
-        <Contenedor>
-        </Contenedor>
-      </main>
-    </>
+    <Router>        
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Inicio/>} />
+        <Route path="/carreras" element={<Carreras/>}/>
+      </Routes>
+    </Router>
   )
 }
 
